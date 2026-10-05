@@ -1,0 +1,119 @@
+[
+  {
+    "repository": "acidanthera/OpenCorePkg",
+    "license": "BSD-3-Clause",
+    "source": "https://github.com/acidanthera/OpenCorePkg/blob/master/LICENSE.txt",
+    "saved": "acidanthera--OpenCorePkg.txt",
+    "license_blob": "9a15cce349e6e8a4eeaf3b31fbb3cfe7a3214856"
+  },
+  {
+    "repository": "acidanthera/Lilu",
+    "license": "BSD-3-Clause",
+    "source": "https://github.com/acidanthera/Lilu/blob/master/LICENSE.txt",
+    "saved": "acidanthera--Lilu.txt",
+    "license_blob": "0c9c29f321b2520daecb4f728afb80fdad4a478f"
+  },
+  {
+    "repository": "acidanthera/VirtualSMC",
+    "license": "BSD-3-Clause",
+    "source": "https://github.com/acidanthera/VirtualSMC/blob/master/LICENSE.txt",
+    "saved": "acidanthera--VirtualSMC.txt",
+    "license_blob": "0dbc9af34cacc20c224de4b16a41b643f45f88a5"
+  },
+  {
+    "repository": "acidanthera/AppleALC",
+    "license": "BSD-3-Clause",
+    "source": "https://github.com/acidanthera/AppleALC/blob/master/LICENSE.txt",
+    "saved": "acidanthera--AppleALC.txt",
+    "license_blob": "bf411a986368f6bdc6b228b02dc5d2f4ed9a6b31"
+  },
+  {
+    "repository": "acidanthera/BrcmPatchRAM",
+    "license": "GPL-2.0",
+    "source": "https://github.com/acidanthera/BrcmPatchRAM/blob/master/LICENSE",
+    "saved": "acidanthera--BrcmPatchRAM.txt",
+    "license_blob": "d6a93266f748d606b884f9434ff662fe80b9dc21"
+  },
+  {
+    "repository": "acidanthera/BrightnessKeys",
+    "license": "BSD-3-Clause",
+    "source": "https://github.com/acidanthera/BrightnessKeys/blob/master/LICENSE",
+    "saved": "acidanthera--BrightnessKeys.txt",
+    "license_blob": "512cab1cf4f9c50424432e8260c2e070c8e0eee8"
+  },
+  {
+    "repository": "OpenIntelWireless/IntelBluetoothFirmware",
+    "license": "GPL-3.0",
+    "source": "https://github.com/OpenIntelWireless/IntelBluetoothFirmware/blob/master/LICENSE",
+    "saved": "OpenIntelWireless--IntelBluetoothFirmware.txt",
+    "license_blob": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7"
+  },
+  {
+    "repository": "acidanthera/NVMeFix",
+    "license": "NOASSERTION",
+    "source": "https://github.com/acidanthera/NVMeFix/blob/master/LICENSE.txt",
+    "saved": "acidanthera--NVMeFix.txt",
+    "license_blob": "928872867681eebf3a7f82f8ebb85097b74e6aa3"
+  },
+  {
+    "repository": "Mieze/RTL8111_driver_for_OS_X",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "repository": "acidanthera/RestrictEvents",
+    "license": "BSD-3-Clause",
+    "source": "https://github.com/acidanthera/RestrictEvents/blob/master/LICENSE.txt",
+    "saved": "acidanthera--RestrictEvents.txt",
+    "license_blob": "9c6c9e7fbbb72d08015a6196ce261e6c13ae04f3"
+  },
+  {
+    "repository": "VoodooI2C/VoodooI2C",
+    "license": "GPL-3.0",
+    "source": "https://github.com/VoodooI2C/VoodooI2C/blob/master/LICENSE.txt",
+    "saved": "VoodooI2C--VoodooI2C.txt",
+    "license_blob": "2bf2f3cdc687e1650b4f4a26bc5e81e322c9a769"
+  },
+  {
+    "repository": "acidanthera/VoodooPS2",
+    "license": "NOASSERTION",
+    "source": "https://github.com/acidanthera/VoodooPS2/blob/master/LICENSE.md",
+    "saved": "acidanthera--VoodooPS2.txt",
+    "license_blob": "299b3f982fa8088f21616fb886ded32b5b28a96e"
+  },
+  {
+    "repository": "acidanthera/WhateverGreen",
+    "license": "BSD-3-Clause",
+    "source": "https://github.com/acidanthera/WhateverGreen/blob/master/LICENSE.txt",
+    "saved": "acidanthera--WhateverGreen.txt",
+    "license_blob": "40a5fcb639b170ac09ff645148d99bc3b76c8b15"
+  },
+  {
+    "repository": "zhen-zen/YogaSMC",
+    "license": "GPL-2.0",
+    "source": "https://github.com/zhen-zen/YogaSMC/blob/master/LICENSE",
+    "saved": "zhen-zen--YogaSMC.txt",
+    "license_blob": "d159169d1050894d3ea3b98e1c965c4058208fe1"
+  },
+  {
+    "repository": "OpenIntelWireless/itlwm",
+    "license": "GPL-2.0",
+    "source": "https://github.com/OpenIntelWireless/itlwm/blob/master/LICENSE",
+    "saved": "OpenIntelWireless--itlwm.txt",
+    "license_blob": "d159169d1050894d3ea3b98e1c965c4058208fe1"
+  },
+  {
+    "repository": "CorpNewt/USBMap",
+    "license": "MIT",
+    "source": "https://github.com/corpnewt/USBMap/blob/master/LICENSE",
+    "saved": "CorpNewt--USBMap.txt",
+    "license_blob": "a21f76039ccc4e0ef8e8c4a4d8af6b616192eb90"
+  },
+  {
+    "repository": "Mieze/RTL8111_driver_for_OS_X",
+    "license_texts": [
+      "RealtekRTL8111/gpl.txt",
+      "RealtekRTL8111/APPLE_LICENSE"
+    ],
+    "source": "https://github.com/Mieze/RTL8111_driver_for_OS_X/tree/master/RealtekRTL8111"
+  }
+]
