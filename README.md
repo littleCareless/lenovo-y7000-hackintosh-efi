@@ -14,6 +14,12 @@ Two OpenCore snapshots for one Lenovo Y7000 laptop, with separate folders for ma
 
 The EFI identifies the machine as MacBookPro15,2 (macOS 14) or MacBookPro16,1 (macOS 26). These are SMBIOS identities, not the laptop's physical model. The GTX 1050 Ti is a Pascal GPU; current macOS releases use the UHD 630 for graphics. See the [Dortania GPU guide](https://dortania.github.io/GPU-Buyers-Guide/modern-gpus/nvidia-gpu.html#pascal-series-gtx-10xx).
 
+## Browse and download
+
+- macOS 14 Sonoma: [`macOS-14/EFI`](macOS-14/EFI/)
+- macOS 26 Tahoe: [`macOS-26/EFI`](macOS-26/EFI/)
+- Download the complete repository, including both EFI folders and the license notes: [GitHub ZIP archive](https://github.com/littleCareless/lenovo-y7000-hackintosh-efi/archive/refs/heads/main.zip)
+
 ## Pick the matching snapshot
 
 | Folder | Intended system | Snapshot details |
