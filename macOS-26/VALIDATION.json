@@ -1,7 +1,7 @@
 {
   "files": 160,
-  "bytes": 51590955,
-  "source_unchanged": true,
+  "bytes": 51589531,
+  "source_unchanged": false,
   "plist_parse_and_enabled_references_valid": true,
   "identity_and_known_secrets_scan_passed": true,
   "smbios_model": "MacBookPro16,1",
@@ -50,6 +50,37 @@
     "VoodooI2C.kext/Contents/PlugIns/VoodooInput.kext": "1.1.7"
   },
   "publication_adjustments": [
-    "USBMap IOKit personality name and Target SMBIOS label changed from MacBookPro15,2 to MacBookPro16,1; provider, IOParentMatch, and port mapping data unchanged."
-  ]
+    "Tahoe USBMap rebuilt from live port discovery: MacBookPro16,1 / AppleIntelCNLUSBXHCI / PCI parent 0:20:0; 6 HS and 4 SS entries; internal camera and Bluetooth use connector type 255."
+  ],
+  "usb_post_boot_validation": {
+    "date": "2026-10-05",
+    "macos_version": "26.7.1",
+    "map_active": true,
+    "hs_ports": 6,
+    "ss_ports": 4,
+    "device": "Kingston DataTraveler 3.0",
+    "superspeed_tests": [
+      {
+        "physical_port": "right USB-A",
+        "logical_port": "SS04",
+        "link_speed_bps": 5000000000
+      },
+      {
+        "physical_port": "left USB-A",
+        "logical_port": "SS03",
+        "link_speed_bps": 5000000000
+      },
+      {
+        "physical_port": "rear USB-A",
+        "logical_port": "SS01",
+        "link_speed_bps": 5000000000
+      }
+    ],
+    "untested": [
+      "USB-C plug orientations",
+      "sleep/wake",
+      "external display"
+    ],
+    "link_speed_is_not_file_copy_throughput": true
+  }
 }

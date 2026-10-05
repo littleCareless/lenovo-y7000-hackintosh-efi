@@ -29,7 +29,9 @@ The EFI identifies the machine as MacBookPro15,2 (macOS 14) or MacBookPro16,1 (m
 
 OpenCore's binary does not expose a version string that could be verified from this snapshot, so no version number is claimed. Both configurations currently set `SecureBootModel` to `Disabled` and `csr-active-config` to `030A0000`; review these settings for your own setup.
 
-The source Tahoe USBMap was labelled `MacBookPro15,2-XHC` and `model=MacBookPro15,2`. I aligned those two descriptive fields to `MacBookPro16,1` in the published copy. I left its actual matching and port data unchanged: it targets the active `AppleIntelCNLUSBXHCI` controller through PCI parent `0:20:0`. The map lists 15 HS entries, enables HS01, HS02, HS03, HS06 and HS14 as connector type 3, and has no SS entries. The physical USB 2 and USB 3 ports have not been tested against this map, so USB mapping remains unverified.
+The Tahoe USBMap was rebuilt from this laptop's detected ports on 2026-10-05 and installed and verified after reboot on macOS 26.7.1. It matches `MacBookPro16,1`, `AppleIntelCNLUSBXHCI` and PCI parent `0:20:0`, and enables 10 logical ports: HS01, HS02, HS03, HS04, HS06, HS14 and SS01-SS04. USB-A personalities use connector type 3; the internal camera (HS06) and Bluetooth (HS14) use type 255. Both legacy and Tahoe port-property keys are included.
+
+A Kingston DataTraveler 3.0 negotiated **5 Gb/s** on the three USB-A SuperSpeed channels: right SS04, left SS03 and rear SS01. Before the fix, the right port negotiated only 480 Mb/s on HSP3. These are negotiated link speeds, not file-copy throughput measurements. USB-C (HS04 / SS02, connector type 9 retained from firmware) is included but its two plug orientations have not been tested with a USB 3.x device.
 
 The current installed wireless card model has not been verified. The Tahoe snapshot includes an `IOName` value of `pci14e4,43a0` and legacy Wi-Fi kexts; that spoof is a configuration property, not evidence of the physical card model or a guarantee that Wi-Fi, AirDrop or other continuity features work.
 
@@ -40,7 +42,7 @@ The current installed wireless card model has not been verified. The Tahoe snaps
 3. Compare BIOS, Wi-Fi and Bluetooth hardware, audio, trackpad, USB port layout and display routing with your laptop. Same CPU alone does not guarantee compatibility.
 4. Test from removable media before replacing an EFI used for daily boot.
 
-These folders are configuration snapshots. The file and kext inventory was checked, but this publication process did not perform a fresh boot, sleep/wake, external display, or per-port USB test. A listed or enabled kext does not establish that its associated function has been verified.
+These folders are configuration snapshots. The Tahoe USBMap was booted and its three USB-A SuperSpeed channels were verified as described above; this does not establish that every feature has been tested. Sleep/wake, external displays, USB-C plug orientations and a fresh boot of the Sonoma snapshot remain unverified. A listed or enabled kext does not establish that its associated function has been verified.
 
 ## Contents and attribution
 
