@@ -63,24 +63,51 @@
       {
         "physical_port": "right USB-A",
         "logical_port": "SS04",
-        "link_speed_bps": 5000000000
+        "link_speed_bps": 5000000000,
+        "controller_port_number": 20,
+        "location_id": "0x14a00000",
+        "usb2_logical_port": "HS03",
+        "usb2_physical_port_verified": true,
+        "physical_port_basis": "Explicit owner location confirmation"
       },
       {
         "physical_port": "left USB-A",
         "logical_port": "SS03",
-        "link_speed_bps": 5000000000
+        "link_speed_bps": 5000000000,
+        "controller_port_number": 19,
+        "location_id": "0x14900000",
+        "usb2_logical_port": null,
+        "usb2_physical_port_verified": false,
+        "physical_port_basis": "Explicit owner location confirmation"
       },
       {
         "physical_port": "rear USB-A",
         "logical_port": "SS01",
-        "link_speed_bps": 5000000000
+        "link_speed_bps": 5000000000,
+        "controller_port_number": 17,
+        "location_id": "0x14700000",
+        "usb2_logical_port": null,
+        "usb2_physical_port_verified": false,
+        "physical_port_basis": "Observed after requested move to the rear port; physical location inferred from test sequence"
       }
     ],
     "untested": [
-      "USB-C plug orientations",
+      "USB-C SuperSpeed and both plug orientations with a known working USB 3.x device/cable",
+      "Left and rear USB-A USB 2.0 channel pairing",
       "sleep/wake",
       "external display"
     ],
-    "link_speed_is_not_file_copy_throughput": true
+    "link_speed_is_not_file_copy_throughput": true,
+    "type_c_usb2_test": {
+      "date": "2026-10-05",
+      "physical_port": "rear USB-C",
+      "device": "iPhone",
+      "logical_port": "HS04",
+      "location_id": "0x14400000",
+      "link_speed_bps": 480000000,
+      "charging_confirmed_by_owner": true,
+      "charging_restored_after_cable_replacement": true,
+      "superspeed_verified": false
+    }
   }
 }

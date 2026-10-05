@@ -33,6 +33,19 @@ The Tahoe USBMap was rebuilt from this laptop's detected ports on 2026-10-05 and
 
 A Kingston DataTraveler 3.0 negotiated **5 Gb/s** on the three USB-A SuperSpeed channels: right SS04, left SS03 and rear SS01. Before the fix, the right port negotiated only 480 Mb/s on HSP3. These are negotiated link speeds, not file-copy throughput measurements. USB-C (HS04 / SS02, connector type 9 retained from firmware) is included but its two plug orientations have not been tested with a USB 3.x device.
 
+
+The physical USB-A channel record is:
+
+| Physical port | SuperSpeed channel | Controller port number | locationID | Negotiated speed | USB 2.0 channel |
+| --- | --- | --- | --- | --- | --- |
+| Left USB-A | SS03 | 19 (0x13) | 0x14900000 | 5 Gb/s | Not physically verified |
+| Right USB-A | SS04 | 20 (0x14) | 0x14a00000 | 5 Gb/s | HS03, observed before the mapping fix |
+| Rear USB-A | SS01 | 17 (0x11) | 0x14700000 | 5 Gb/s | Not physically verified |
+
+The rear physical-port label follows the requested move to the rear port and the resulting SS01 enumeration; the left and right locations were explicitly confirmed by the owner. HS and SS numbers should not be paired by matching their suffixes. See the [Chinese port record](macOS-26/USB-PORTS.md).
+
+A subsequent USB-C check detected an iPhone on HS04 at 480 Mb/s. The owner confirmed charging recovered after replacing the original cable. This verifies the tested USB 2.0 connection and charging behavior; USB-C SuperSpeed and both plug orientations remain untested.
+
 The current installed wireless card model has not been verified. The Tahoe snapshot includes an `IOName` value of `pci14e4,43a0` and legacy Wi-Fi kexts; that spoof is a configuration property, not evidence of the physical card model or a guarantee that Wi-Fi, AirDrop or other continuity features work.
 
 ## Before use
